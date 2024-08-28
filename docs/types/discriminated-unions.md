@@ -128,9 +128,9 @@ function area(s: Shape) {
 
 [references-discriminated-union]:https://github.com/Microsoft/TypeScript/pull/9163
 
-### strictNullChecks
+### noImplicitReturns
 
-If using *strictNullChecks* and doing exhaustive checks, TypeScript might complain "not all code paths return a value". You can silence that by simply returning the `_exhaustiveCheck` variable (of type `never`). So:
+If using *noImplicitReturns* and doing exhaustive checks, TypeScript might complain "not all code paths return a value". You can silence that by simply returning the `_exhaustiveCheck` variable (of type `never`). So:
 
 ```ts
 function area(s: Shape) {
